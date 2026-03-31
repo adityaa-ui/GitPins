@@ -1,0 +1,78 @@
+.upper {
+    background-color: #0c0f22;
+    padding: 15px 40px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left h2{
+    color: aliceblue;
+}
+.left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.left ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.left ul li {
+    cursor: pointer;
+    color: rgb(170, 167, 167);
+}
+.left ul li:hover {
+    color: rgb(255, 255, 255);
+    font-size: medium;
+}
+
+
+.upper2 {
+    display: flex;
+    gap: 20px;
+}
+
+.upper2 input {
+    background-color: rgb(35, 33, 33);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+}
+
+.upper2 button {
+    background-color: rgb(39, 39, 165);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    color: white;
+}
+.search-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  color: gray;
+  font-size: 16px;
+}
+
+.search-box input {
+  background-color: rgb(35, 33, 33);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px 10px 38px;
+  color: white;
+}
