@@ -220,7 +220,7 @@ export default function Landingpage() {
         </h2>
         <p>
           Join 50,000+ developers curating the next generation of software
-          masterpieces. Your board is waiting.
+          masterpieces, Your board is waiting.
         </p>
         <div className="cta-buttons">
           <button className="primary-btn">Start Pinning Now</button>
