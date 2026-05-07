@@ -72,7 +72,7 @@ const Landing = () => {
               Get Started <ArrowRight className="w-5 h-5" />
             </button>
             <a 
-              href="https://github.com" 
+              href="https://github.com/adityaa-ui" 
               target="_blank" 
               rel="noreferrer"
               className="px-8 py-4 bg-[#1e293b] hover:bg-[#2a374a] text-white rounded-full font-semibold flex items-center justify-center gap-2 transition-all"
