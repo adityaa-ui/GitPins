@@ -32,6 +32,12 @@ const Collections = () => {
           </button>
         </nav>
         <div className="mt-8 px-4">
+          <form onSubmit={(e) => { e.preventDefault(); const val = e.target.search.value; if(val) navigate(`/search?q=${encodeURIComponent(val)}`); }} className="relative mb-4">
+            <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none text-on-surface-variant">
+              <span className="material-symbols-outlined text-sm">search</span>
+            </div>
+            <input name="search" className="bg-surface-container-highest border-none rounded-lg py-2 pl-10 pr-4 text-sm w-full focus:ring-2 focus:ring-primary/30 transition-all text-on-surface font-body" placeholder="Explore repositories..." type="text"/>
+          </form>
           <button className="w-full py-3 bg-gradient-to-r from-primary to-primary-container text-on-primary font-bold rounded-full transition-transform active:scale-95 duration-200">
             New Collection
           </button>
@@ -53,6 +59,7 @@ const Collections = () => {
           <span className="font-display text-2xl font-bold bg-gradient-to-r from-primary to-primary-container bg-clip-text text-transparent">GitPins</span>
         </div>
         <div className="flex gap-4">
+          <span className="material-symbols-outlined text-primary cursor-pointer" onClick={() => navigate('/search')}>search</span>
           <span className="material-symbols-outlined text-primary">notifications</span>
           <span className="material-symbols-outlined text-primary">settings</span>
         </div>

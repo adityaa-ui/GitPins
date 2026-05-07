@@ -20,6 +20,12 @@ const Community = () => {
           </div>
         </div>
         <div className="flex items-center gap-4">
+          <form onSubmit={(e) => { e.preventDefault(); const val = e.target.search.value; if(val) navigate(`/search?q=${encodeURIComponent(val)}`); }} className="relative hidden lg:block">
+            <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none text-on-surface-variant">
+              <span className="material-symbols-outlined text-sm">search</span>
+            </div>
+            <input name="search" className="bg-surface-container-highest border-none rounded-lg py-2 pl-10 pr-4 text-sm w-64 focus:ring-2 focus:ring-primary/30 transition-all text-on-surface font-body" placeholder="Explore repositories..." type="text"/>
+          </form>
           <div className="flex gap-2">
             <button className="p-2 rounded-full hover:bg-surface-variant/20 transition-transform duration-200 scale-95 active:scale-90">
               <span className="material-symbols-outlined text-on-surface-variant">notifications</span>
