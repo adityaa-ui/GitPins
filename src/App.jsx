@@ -1,6 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Landing from './pages/Landing';
 import Feed from './pages/Feed';
+import Collections from './pages/Collections';
+import Community from './pages/Community';
+import Search from './pages/Search';
 
 function App() {
   return (
@@ -9,6 +12,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/feed" element={<Feed />} />
+          <Route path="/collections" element={<Collections />} />
+          <Route path="/community" element={<Community />} />
+          <Route path="/search" element={<Search />} />
         </Routes>
       </div>
     </Router>

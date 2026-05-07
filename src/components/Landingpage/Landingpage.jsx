@@ -91,7 +91,7 @@ export default function Landingpage() {
 
         <div className="nav-right">
           <input type="text" placeholder="Search repositories..." />
-          <button>Sign Up</button>
+          <button>Pins</button>
         </div>
       </nav>
 
