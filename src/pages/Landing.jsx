@@ -207,7 +207,14 @@ const Landing = () => {
                 <h2 className="font-mono text-[64px] font-extrabold leading-[1.1] tracking-[-0.04em] text-[32px] mb-[16px]">Start curating the<br/>future of code.</h2>
                 <div className="flex flex-col sm:flex-row gap-[16px]">
                   <button onClick={() => navigate('/feed')} className="px-[32px] py-[16px] bg-primary-container text-on-primary font-mono text-[12px] font-medium leading-none tracking-[0.1em] hover:bg-primary transition-all">OPEN_STUDIO -&gt;</button>
-                  <button onClick={() => navigate('/feed')} className="px-[32px] py-[16px] border border-surface/20 text-surface font-mono text-[12px] font-medium leading-none tracking-[0.1em] hover:bg-surface/10 transition-all">STAR_ON_GITHUB</button>
+                 <a
+  href="https://github.com/adityaa-ui/GitPins"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-[32px] py-[16px] border border-surface/20 text-surface font-mono text-[12px] font-medium leading-none tracking-[0.1em] hover:bg-surface/10 transition-all inline-block"
+>
+  STAR_ON_GITHUB
+</a>
                 </div>
               </div>
               <div className="relative z-10 font-mono text-[64px] font-extrabold leading-[1.1] tracking-[-0.04em] text-[120px] leading-none text-surface/5 select-none hidden lg:block">
